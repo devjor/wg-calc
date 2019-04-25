@@ -51,7 +51,7 @@ function disableForm() {
 
 function resetButton() {
   calcButton.removeEventListener('click', resetButton);
-  calcButton.type = "submit";
+  calcButton.type = "";
   calcButton.addEventListener('click', calculateWage);
   calcButton.textContent = "Calc";
   
