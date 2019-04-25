@@ -35,23 +35,25 @@ function calculateWage() {
   } else {
     result.textContent = "D'oh!";
   }
+  
+  
   disableForm();
 }
 
 function disableForm() {
-    for (var i = 0; i < inputs.length; i++) {
+  calcButton.removeEventListener('click', calculateWage);
+  calcButton.addEventListener('click', resetForm);
+  calcButton.textContent = "Reset";
+
+  for (var i = 0; i < inputs.length; i++) {
     inputs[i].disabled = true;
-    calcButton.type = "reset";
-    calcButton.textContent = "Reset";
-    calcButton.addEventListener('click', resetButton);
     // inputs[i].style.visibility = "hidden";
     // labels[i].style.visibility = "hidden";
   }
 }
 
-function resetButton() {
-  calcButton.removeEventListener('click', resetButton);
-  calcButton.type = "";
+function resetForm() {
+  calcButton.removeEventListener('click', resetForm);
   calcButton.addEventListener('click', calculateWage);
   calcButton.textContent = "Calc";
   
@@ -60,6 +62,7 @@ function resetButton() {
     // inputs[i].style.visibility = "visible";
     // labels[i].style.visibility = "visible";
     inputs[i].disabled = false;
+    inputs[i].value = '';
   }
 
   result.textContent = '';
