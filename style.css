@@ -8,7 +8,7 @@ html, body {
 
 form {
   width: 50%;
-  height: 75%;
+  height: 70%;
   padding-top: 2%;
   margin: 0 auto;
   font-size: 200%;
@@ -71,7 +71,7 @@ label {
 }
 
 .result {
-  margin: 5% 0;
+  margin: 3% 0;
   color: #F4DECB;
   font-size: 120%;
   text-align: center;
