@@ -1,0 +1,79 @@
+html, body {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  background-color: #94618E;
+  padding: 0;
+  margin: 0;
+}
+
+form {
+  width: 50%;
+  height: 75%;
+  padding-top: 2%;
+  margin: 0 auto;
+  font-size: 200%;
+}
+
+input {
+  width: 100%;
+  height: 14%;
+  font-size: 180%;
+  border-radius: 1em;
+  margin: 2% 0;
+  text-align: center;
+  background-color: #F8EEE7;
+}
+
+input:focus {
+  outline:none;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+label {
+  display: block;
+  font-size: 70%;
+  text-align: center;
+  color: #F8EEE7;
+}
+
+.calculate {
+  display: block;
+  border: none;
+  outline: none;
+  width: 60%;
+  height: 10%;
+  margin: 2% auto;
+  font-size: 80%;
+  border-radius: 1em;
+  background-color: #49274A;
+  color: #F4DECB;
+  box-shadow: 5px 5px 5px black;
+}
+
+.calculate:hover{
+  box-shadow: 3px 3px 3px black;
+  cursor: pointer;
+}
+
+.calculate:active {
+  box-shadow: inset 5px 5px 5px black;
+}
+
+.calculate:focus {
+  outline: none;
+}
+
+.result {
+  margin: 0;
+  color: #F4DECB;
+  font-size: 120%;
+  text-align: center;
+  text-shadow: 2px 2px 2px black;
+}
