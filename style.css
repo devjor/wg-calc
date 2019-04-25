@@ -2,13 +2,11 @@ html, body {
   height: 100%;
   font-family: 'Roboto', sans-serif;
   background-color: #94618E;
-  padding: 0;
-  margin: 0;
 }
 
 form {
   width: 50%;
-  height: 70%;
+  height: 75%;
   padding-top: 2%;
   margin: 0 auto;
   font-size: 200%;
@@ -44,13 +42,14 @@ label {
 }
 
 .calculate {
-  display: block;
-  border: none;
-  outline: none;
   width: 60%;
   height: 10%;
-  margin: 2% auto;
+  margin: 0.5em auto;
+  padding-top: 0.2em;
   font-size: 80%;
+  text-align: center;
+  line-height: 1.8;
+  font-weight: bold;
   border-radius: 1em;
   background-color: #49274A;
   color: #F4DECB;
@@ -66,14 +65,10 @@ label {
   box-shadow: inset 5px 5px 5px black;
 }
 
-.calculate:focus {
-  outline: none;
-}
-
-.result {
-  margin: 3% 0;
+.result, p {
+  /* margin-top: 10%; */
+  font-size: 300%;
   color: #F4DECB;
-  font-size: 120%;
   text-align: center;
   text-shadow: 2px 2px 2px black;
 }
