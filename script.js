@@ -1,8 +1,8 @@
 
-const basicPay = 1798.50;
+const basicPay = 1818.25.50;
 const hourlyRate = 11.0374;
 const mileageRate = 0.56;
-const taxCode = 13180;
+const taxCode = 13890;
 const NiPrimaryThreshold = 702;
 const parking = 12.50;
 
