@@ -27,9 +27,10 @@ function calculateWage() {
   var mileage = Number(mileageField.value);
   var wtdPay = (satPay + sunPay) * 0.1205;
   var taxable = basicPay + satPay + sunPay + bhPay + wtdPay + (mileage * 0.11);
-  var paye = (taxable - taxCode / 12) * 0.2;
+  var pension_cont = taxable * 0.071;
+  var paye = ((taxable - pension_cont) - (taxCode / 12)) * 0.2;
   var ni = (taxable - NiPrimaryThreshold) * 0.12;
-  var netPay = (basicPay + satPay + sunPay + bhPay + wtdPay + mileagePay) - (paye + ni + parking);
+  var netPay = (basicPay + satPay + sunPay + bhPay + wtdPay + mileagePay) - (paye + ni + parking) - pension_cont;
   if(!isNaN(netPay)) {
     result.textContent = '£' + (Math.round(netPay * 100) / 100).toFixed(2);
   } else {
