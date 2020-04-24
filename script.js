@@ -1,10 +1,10 @@
 
 const basicPay = 2013.08;
-const hourlyRate = 11.4977;
+const hourlyRate = 12.3543;
 const mileageRate = 0.56;
 const taxCode = 13890;
 const NiPrimaryThreshold = 792;
-const parking = 0;
+const parking = 12.5;
 
 var satHoursField = document.querySelector('.satHoursField');
 var sunHoursField = document.querySelector('.sunHoursField');
