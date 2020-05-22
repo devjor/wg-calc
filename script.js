@@ -27,7 +27,7 @@ function calculateWage() {
   var mileage = Number(mileageField.value);
   var wtdPay = (satPay + sunPay) * 0.1205;
   var taxable = basicPay + satPay + sunPay + bhPay + wtdPay + (mileage * 0.11);
-  var pension_cont = taxable * 0.071;
+  var pension_cont = taxable * 0.093;
   var paye = ((taxable - pension_cont) - (taxCode / 12)) * 0.2;
   var ni = (taxable - NiPrimaryThreshold) * 0.12;
   var netPay = (basicPay + satPay + sunPay + bhPay + wtdPay + mileagePay) - (paye + ni + parking) - pension_cont;
