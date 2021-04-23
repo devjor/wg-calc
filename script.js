@@ -5,6 +5,7 @@ const mileageRate = 0.56;
 const taxCode = 13970;
 const NiPrimaryThreshold = 797;
 const parking = 0 // 12.5;
+const pensionRate = 0.093;
 
 var satHoursField = document.querySelector('.satHoursField');
 var sunHoursField = document.querySelector('.sunHoursField');
@@ -27,7 +28,7 @@ function calculateWage() {
   var mileage = Number(mileageField.value);
   var wtdPay = (satPay + sunPay) * 0.1205;
   var taxable = basicPay + satPay + sunPay + bhPay + wtdPay + (mileage * 0.11);
-  var pension_cont = taxable * 0.093;
+  var pension_cont = taxable * pensionRate;
   var paye = ((taxable - pension_cont) - (taxCode / 12)) * 0.2;
   var ni = (taxable - NiPrimaryThreshold) * 0.12;
   var netPay = (basicPay + satPay + sunPay + bhPay + wtdPay + mileagePay) - (paye + ni + parking) - pension_cont;
