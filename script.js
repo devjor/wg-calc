@@ -1,5 +1,5 @@
 
-const basicPay = 2013.08;
+const basicPay = 2073.50;
 const hourlyRate = 12.7251;
 const mileageRate = 0.56;
 const taxCode = 13970;
