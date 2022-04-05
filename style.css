@@ -58,6 +58,7 @@ label {
 
 .calculate:hover{
   box-shadow: 3px 3px 3px black;
+  font-size: 48%;
   cursor: pointer;
 }
 
