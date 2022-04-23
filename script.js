@@ -3,7 +3,8 @@ const basicPay = 2073.50;
 const hourlyRate = 12.7251;
 const mileageRate = 0.56;
 const taxCode = 13970;
-const NiPrimaryThreshold = 797;
+const NiPrimaryThreshold = 823;
+const niRate = 0.1505;
 const parking = 0 // 12.5;
 const pensionRate = 0.093;
 
@@ -30,7 +31,7 @@ function calculateWage() {
   var taxable = basicPay + satPay + sunPay + bhPay + wtdPay + (mileage * 0.11);
   var pension_cont = taxable * pensionRate;
   var paye = ((taxable - pension_cont) - (taxCode / 12)) * 0.2;
-  var ni = (taxable - NiPrimaryThreshold) * 0.12;
+  var ni = (taxable - NiPrimaryThreshold) * niRate;
   var netPay = (basicPay + satPay + sunPay + bhPay + wtdPay + mileagePay) - (paye + ni + parking) - pension_cont;
   if(!isNaN(netPay)) {
     result.textContent = '£' + (Math.round(netPay * 100) / 100).toFixed(2);
