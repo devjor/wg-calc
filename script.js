@@ -4,7 +4,7 @@ const hourlyRate = 12.7251;
 const mileageRate = 0.56;
 const taxCode = 13970;
 const NiPrimaryThreshold = 823;
-const niRate = 0.1505;
+const niRate = 0.1325;
 const parking = 0 // 12.5;
 const pensionRate = 0.093;
 
