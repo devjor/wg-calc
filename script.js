@@ -1,5 +1,5 @@
 
-const hourlyRate = 12.7251;
+const hourlyRate = 13.441;
 const basicHours = 162.95;
 const basicPay = hourlyRate * basicHours;
 const mileageRate = 0.56;
